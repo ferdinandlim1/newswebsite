@@ -12,7 +12,6 @@ import { SportsComponent } from './sports/sports.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
-import { SearchModule } from './search/search.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +26,6 @@ import { SearchModule } from './search/search.module';
     HttpClientModule,
     LoadingBarHttpClientModule,
     NgxSkeletonLoaderModule.forRoot({ animation: 'pulse', loadingText: 'This item is actually loading...' }),
-    SearchModule,
   ],
   providers: [NewsapiserviceService],
   bootstrap: [AppComponent]
